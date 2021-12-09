@@ -1,6 +1,6 @@
 class MetricsController < ApplicationController
     def index
-        @metrics = Metric.all 
+        @metrics = Metric.all.order(time: :desc)
         render json: @metrics
     end 
 
