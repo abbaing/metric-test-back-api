@@ -4,8 +4,19 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one:
+  name: 'Metric 1'
+  value: 120,
+  time: 2020-12-14
+two: 
+  name: 'Metric 2'
+  value: 14,
+  time: 2020-12-02
+
+#ERB example
+<% 1000.times do |n| %>
+metric_<%= n %>:
+  name: <%= "Metric#{n}" %>
+  value: <%= "{n}" %>
+  time: 2020-12-02
+<% end %>

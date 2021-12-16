@@ -1,7 +1,8 @@
 require "test_helper"
 
 class MetricTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should not save metric without name" do
+    metric = Metric.new
+    assert_not metric.save
+  end
 end
