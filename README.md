@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby On Rails backend project developed for a technical test.
 
-Things you may want to cover:
+Project details:
 
-* Ruby version
+* Ruby version 3.0.0
 
-* System dependencies
+* Configuration: bundle install
 
-* Configuration
+* Database creation: rake db:create
 
-* Database creation
+* Database initialization: rake db:migrate
 
-* Database initialization
+* Launch server:
+  1- bin/rails s
 
-* How to run the test suite
+* Launch tests: 
+  1- rails db:migrate
+  2- rails db:test:prepare
+  3- bin/rails test
 
-* Services (job queues, cache servers, search engines, etc.)
+* Deployment instructions: 
+  1- Launch backend (on port 3000)
+  2- Launch frontend (confirm on port 3001+)
 
-* Deployment instructions
-
-* ...
